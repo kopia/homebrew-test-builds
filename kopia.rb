@@ -4,27 +4,27 @@
 class Kopia < Formula
   desc "Fast and secure open source backup."
   homepage "https://kopia.io"
-  version "20231221.0.163958"
+  version "20231221.0.181248"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.163958/kopia-20231221.0.163958-macOS-x64.tar.gz"
-    sha256 "bfcdfe674e66a55e31f75050999e8af697ad42b00ebfda416202d310ce542c79"
+    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.181248/kopia-20231221.0.181248-macOS-x64.tar.gz"
+    sha256 "352df6db3adcd00d699704a41ef043606694d5f884148df9a309d4a1a8dc8300"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.163958/kopia-20231221.0.163958-macOS-arm64.tar.gz"
-    sha256 "eb59910d429f4ec646c1d82831814c633a242c03e860bd726e372ea5f1c31246"
+    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.181248/kopia-20231221.0.181248-macOS-arm64.tar.gz"
+    sha256 "5766eca3f47ad19f59f565380aa4ceeb113a06c545d192a6d71b919bf05cc11e"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.163958/kopia-20231221.0.163958-linux-x64.tar.gz"
-    sha256 "8f6ddb577ecfe0e3fb679b5349f752b474a41065fa47217def7b55cadd481c90"
+    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.181248/kopia-20231221.0.181248-linux-x64.tar.gz"
+    sha256 "02ca7187b371c0ac3a9a385c9fcfdc03fc3a19177abac5f6f1567fc23d9d5131"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.163958/kopia-20231221.0.163958-linux-arm.tar.gz"
-    sha256 "82d4a7d70695fea9abac25091ab361fb56d84d4a80857717fa0f95c7a6d12548"
+    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.181248/kopia-20231221.0.181248-linux-arm.tar.gz"
+    sha256 "67e2a83a3810836442bc86016a3d08c3bf45f4466b21780a23b280c5a18b5a51"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.163958/kopia-20231221.0.163958-linux-arm64.tar.gz"
-    sha256 "68e86d5d56c77baa1e157c43c808b990f88b383633069cea945ea2fd78d8c7ad"
+    url "https://github.com/kopia/kopia-test-builds/releases/download/v20231221.0.181248/kopia-20231221.0.181248-linux-arm64.tar.gz"
+    sha256 "3b0dc2715fc090f47fc8f76be6206e02d4cfb72d319ebf29860da08bfe3a693c"
   end
 
   def install
